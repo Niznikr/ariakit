@@ -3,7 +3,7 @@ import ReakitSystemBootstrap from "./reakit-system-bootstrap";
 import ReakitSystemPalette from "./reakit-system-palette";
 import ReakitSystem from "./reakit-system";
 import ReakitUtils from "./reakit-utils";
-import Reakit from "./reakit";
+import Reakit from "./@niznikr/reakit";
 
 export default {
   ...ReakitPlayground,

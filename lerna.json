@@ -4,12 +4,13 @@
   "useWorkspaces": true,
   "ignoreChanges": [
     "**/__tests__/**",
-    "**/*.md"
+    "**/*.md",
+    "**/packages/reakit-playground/**"
   ],
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "allowBranch": ["master", "next"],
+      "allowBranch": ["master", "next", "v1"],
       "message": "chore(release): Publish"
     }
   }
