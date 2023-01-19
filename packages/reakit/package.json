@@ -7,19 +7,15 @@
     "access": "public"
   },
   "license": "MIT",
-  "repository": "https://github.com/reakit/reakit",
+  "repository": "https://github.com/Niznikr/ariakit/tree/v1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "unpkg": "dist/reakit.min.js",
   "types": "ts",
   "author": {
-    "name": "Diego Haz",
-    "email": "hazdiego@gmail.com",
-    "url": "https://github.com/diegohaz"
-  },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/ariakit"
+    "name": "Niznikr",
+    "email": "niznikr55@gmail.com",
+    "url": "https://github.com/Niznikr"
   },
   "scripts": {
     "test": "jest",
