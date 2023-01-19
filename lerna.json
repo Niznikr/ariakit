@@ -5,7 +5,8 @@
   "ignoreChanges": [
     "**/__tests__/**",
     "**/*.md",
-    "**/packages/reakit-playground/**"
+    "**/packages/reakit-playground/**",
+    "**/packages/website/**"
   ],
   "command": {
     "publish": {
