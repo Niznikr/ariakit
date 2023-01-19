@@ -13,4 +13,5 @@ module.exports = {
     "@wordpress/jest-console",
     "<rootDir>/jest.setup.js",
   ],
+  transformIgnorePatterns: ["node_modules/(?!(reakit)/)"],
 };
