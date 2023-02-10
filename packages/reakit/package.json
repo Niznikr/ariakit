@@ -1,7 +1,7 @@
 {
   "name": "@niznikr/reakit",
   "version": "1.3.13",
-  "description": "Toolkit for building accessible rich web apps with React",
+  "description": "Forked reakit",
   "sideEffects": false,
   "publishConfig": {
     "access": "public"
