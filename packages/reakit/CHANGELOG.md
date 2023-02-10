@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.13](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.12...@niznikr/reakit@1.3.13) (2023-02-10)
+
+
+### Bug Fixes
+
+* wait for popover mount ([cf06b3e](https://github.com/Niznikr/ariakit/tree/v1/commit/cf06b3e557697c1b720f5795b67127293f5a64d9))
+
+
+
+
+
 ## 1.3.12 (2023-01-19)
 
 
