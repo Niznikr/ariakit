@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.14](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.13...@niznikr/reakit@1.3.14) (2023-02-10)
+
+
+### Bug Fixes
+
+* republish ([48025ee](https://github.com/Niznikr/ariakit/tree/v1/commit/48025eeaeee753c6f193907505ceece832fbdac6))
+
+
+
+
+
 ## [1.3.13](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.12...@niznikr/reakit@1.3.13) (2023-02-10)
 
 
