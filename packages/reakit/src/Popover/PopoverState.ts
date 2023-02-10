@@ -149,6 +149,7 @@ export function usePopoverState(
     }
   );
   const [arrowStyles, setArrowStyles] = React.useState<React.CSSProperties>({});
+  const [mounted, setMounted] = React.useState(false);
 
   const dialog = useDialogState({ modal, ...sealed });
 
@@ -170,6 +171,10 @@ export function usePopoverState(
         setArrowStyles(applyStyles(state.styles.arrow));
       }
     }
+  }, []);
+
+  React.useEffect(() => {
+    setMounted(true);
   }, []);
 
   useIsomorphicEffect(() => {
@@ -228,6 +233,7 @@ export function usePopoverState(
           },
         ],
       });
+      popper.current?.forceUpdate();
     }
     return () => {
       if (popper.current) {
@@ -235,7 +241,15 @@ export function usePopoverState(
         popper.current = null;
       }
     };
-  }, [originalPlacement, fixed, dialog.visible, flip, offset, preventOverflow]);
+  }, [
+    originalPlacement,
+    fixed,
+    dialog.visible,
+    flip,
+    offset,
+    preventOverflow,
+    mounted,
+  ]);
 
   // Ensure that the popover will be correctly positioned with an additional
   // update.
