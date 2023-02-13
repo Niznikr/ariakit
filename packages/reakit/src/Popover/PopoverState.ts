@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { createPopper, Instance, State } from "@popperjs/core";
 import {
   SealedInitialState,
@@ -162,15 +163,19 @@ export function usePopoverState(
   }, []);
 
   const updateState = React.useCallback((state: Partial<State>) => {
-    if (state.placement) {
-      setPlacement(state.placement);
-    }
-    if (state.styles) {
-      setPopoverStyles(applyStyles(state.styles.popper));
-      if (arrowRef.current) {
-        setArrowStyles(applyStyles(state.styles.arrow));
+    ReactDOM.flushSync(() => {
+      if (state.placement) {
+        setPlacement(state.placement);
       }
-    }
+    });
+    ReactDOM.flushSync(() => {
+      if (state.styles) {
+        setPopoverStyles(applyStyles(state.styles.popper));
+        if (arrowRef.current) {
+          setArrowStyles(applyStyles(state.styles.arrow));
+        }
+      }
+    });
   }, []);
 
   React.useEffect(() => {
@@ -233,7 +238,6 @@ export function usePopoverState(
           },
         ],
       });
-      popper.current?.forceUpdate();
     }
     return () => {
       if (popper.current) {
@@ -261,7 +265,7 @@ export function usePopoverState(
     return () => {
       window.cancelAnimationFrame(id);
     };
-  }, [dialog.visible]);
+  }, [dialog.visible, mounted]);
 
   return {
     ...dialog,
