@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.16](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.15...@niznikr/reakit@1.3.16) (2023-02-14)
+
+
+### Bug Fixes
+
+* revert react-dom types update ([8e00d77](https://github.com/Niznikr/ariakit/tree/v1/commit/8e00d77838d600401a8b812c0b94414030b6976a))
+
+
+
+
+
 ## [1.3.15](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.14...@niznikr/reakit@1.3.15) (2023-02-13)
 
 
