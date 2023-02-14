@@ -150,6 +150,7 @@ export function usePopoverState(
     }
   );
   const [arrowStyles, setArrowStyles] = React.useState<React.CSSProperties>({});
+  // Wait for portal mount
   const [mounted, setMounted] = React.useState(false);
 
   const dialog = useDialogState({ modal, ...sealed });
