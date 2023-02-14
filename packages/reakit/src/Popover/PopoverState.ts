@@ -162,6 +162,7 @@ export function usePopoverState(
     return false;
   }, []);
 
+  // Use flushSync to address concurrent render issues in R18
   const updateState = React.useCallback((state: Partial<State>) => {
     // @ts-ignore
     ReactDOM.flushSync(() => {
