@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.18](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.17...@niznikr/reakit@1.3.18) (2023-02-14)
+
+
+### Features
+
+* add portal comment ([fad2897](https://github.com/Niznikr/ariakit/tree/v1/commit/fad2897f11f44d81b8f4fc2a014a35e2dc61fd8e))
+
+
+
+
+
 ## [1.3.17](https://github.com/Niznikr/ariakit/tree/v1/compare/@niznikr/reakit@1.3.16...@niznikr/reakit@1.3.17) (2023-02-14)
 
 
