@@ -163,11 +163,13 @@ export function usePopoverState(
   }, []);
 
   const updateState = React.useCallback((state: Partial<State>) => {
+    // @ts-ignore
     ReactDOM.flushSync(() => {
       if (state.placement) {
         setPlacement(state.placement);
       }
     });
+    // @ts-ignore
     ReactDOM.flushSync(() => {
       if (state.styles) {
         setPopoverStyles(applyStyles(state.styles.popper));
